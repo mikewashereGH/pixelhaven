@@ -134,6 +134,12 @@ nav {
     display: flex;
 }
 
+.container {
+    width: 95%;
+    padding: 20px 0px;
+    margin: auto;
+}
+
 .nav-logo img {
     height: 55px;
     padding: 0.5rem 0.75rem;
