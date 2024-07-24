@@ -12,7 +12,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-image: url('mikewashereGH/pixelhaven/Assets/Images/Brand/back.png');
+    background-image: url('back.png');
     background-size: cover;
     color: var(--primary-white);
 }
