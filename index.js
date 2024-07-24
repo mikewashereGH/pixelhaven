@@ -14,18 +14,3 @@ document.getElementById('copyButton').addEventListener('click', function() {
     document.body.removeChild(tempInput);
     alert('Copied: ' + copyText);
 });
-
-function showPage(pageId) {
-    const pages = document.querySelectorAll('.page');
-    pages.forEach(page => {
-        if (page.id === pageId) {
-            page.style.display = 'block';
-        } else {
-            page.style.display = 'none';
-        }
-    });
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    showPage('home');
-});

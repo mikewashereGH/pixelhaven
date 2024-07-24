@@ -17,10 +17,6 @@ body {
     color: var(--primary-white);
 }
 
-.page {
-    display: none;
-}
-
 a {
     text-decoration: none !important;
 }
@@ -58,7 +54,6 @@ main {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.4);
-    z-index: 1; /* Ensure the overlay is behind the nav */
 }
 
 .players-playing {
@@ -160,14 +155,6 @@ nav li a {
     transition: .3s;
 }
 
-nav li a:hover {
-    color: #292d39;
-}
-
-nav li a svg {
-    padding-right: 3px;
-}
-
 .bar-icon {
     display: none;
     align-items: center;
@@ -175,6 +162,14 @@ nav li a svg {
 
 .bar-icon svg {
     height: 30px;
+}
+
+nav li a:hover {
+    color: #292d39;
+}
+
+nav li a svg {
+    padding-right: 3px;
 }
 
 .card {
