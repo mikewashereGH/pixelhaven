@@ -7,7 +7,6 @@
 <html lang="en">
 
 <head>
-    <!-- Meta -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,15 +16,10 @@
     <meta content="logo.png" property="og:image" />
     <meta content="#e8727a" data-react-helmet="true" name="theme-color" />
 
-    <!-- Tab -->
     <link rel="icon" href="logo.png">
     <title>Pixel Haven</title>
 
-    <!-- Styles -->
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="index.css">
-
-    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
 </head>
 
@@ -39,38 +33,39 @@
                         <img alt='Logo' src='logo.png' />
                     </a>
                     <ul>
-                        <li>
-                            <a href='#'>Home</a>
-                        </li>
-                        <li>
-                            <a href='#'>Rules</a>
-                        </li>
-                        <li>
-                            <a href='#'>Discord</a>
-                        </li>
+                        <li><a href='#home' id="nav-home">Home</a></li>
+                        <li><a href='#rules' id="nav-rules">Rules</a></li>
+                        <li><a href='#discord' id="nav-discord">Discord</a></li>
                     </ul>
                 </div>
             </nav>
             <h1>Welcome to Pixel Haven</h1>
             <div class="server-info">
-                <p style="margin: 0px;"><i class="ph-duotone ph-users"></i>&nbsp;&nbsp;<span data-playercounter-ip="pixelhaven.live">0</span>&nbsp;&nbsp;&nbsp;<i class="ph-duotone ph-desktop"></i>&nbsp;&nbsp;Java&nbsp;&nbsp;&nbsp;<i class="ph-duotone ph-hash-straight"></i>&nbsp;&nbsp;1.21.X</p>
+                <p style="margin: 0px;">
+                    <i class="ph-duotone ph-users"></i>&nbsp;&nbsp;
+                    <span data-playercounter-ip="pixelhaven.live">0</span>&nbsp;&nbsp;&nbsp;
+                    <i class="ph-duotone ph-desktop"></i>&nbsp;&nbsp;Java&nbsp;&nbsp;&nbsp;
+                    <i class="ph-duotone ph-hash-straight"></i>&nbsp;&nbsp;1.21.X
+                </p>
                 <br>
                 <div class="card">
                     <div class="wrap">
                         <div class="terminal">
                             <hgroup class="head">
                                 <p class="title"><i class="ph-duotone ph-hand-waving"></i> Join Now</p>
-
                                 <button class="copy_toggle" id="copyButton" tabindex="-1" type="button">
-                                    <svg width="16px" height="16px" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" fill="none">
-                                        <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2">
+                                    <svg width="16px" height="16px" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linejoin="round"
+                                        stroke-linecap="round" stroke-width="2" stroke="currentColor" fill="none">
+                                        <path
+                                            d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2">
                                         </path>
-                                        <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z">
+                                        <path
+                                            d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z">
                                         </path>
                                     </svg>
                                 </button>
                             </hgroup>
-
                             <div class="body">
                                 <pre class="pre">
                                     <code class="ip" id="ipaddresscopy" data-ip="pixelhaven.live"></code>
@@ -82,6 +77,10 @@
             </div>
         </main>
     </header>
+
+    <section id="home" class="content-section">Welcome to the home page!</section>
+    <section id="rules" class="content-section" style="display: none;">Rules content goes here.</section>
+    <section id="discord" class="content-section" style="display: none;">Discord content goes here.</section>
 
     <script src="index.js"></script>
 </body>
