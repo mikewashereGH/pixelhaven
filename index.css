@@ -17,6 +17,10 @@ body {
     color: var(--primary-white);
 }
 
+.page {
+    display: none;
+}
+
 a {
     text-decoration: none !important;
 }

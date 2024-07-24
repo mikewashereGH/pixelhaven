@@ -12,7 +12,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Pixel Haven" property="og:title" />
-    <meta content="Join our vibrant community for Minecraft SMP, competitive leaderboards, and exciting minigames." property="og:description" />
+    <meta content="Join our vibrant community for Minecraft SMP, competitive leaderboards, and exciting minigames."
+        property="og:description" />
     <meta content="https://www.pixelhaven.live/" property="og:url" />
     <meta content="logo.png" property="og:image" />
     <meta content="#e8727a" data-react-helmet="true" name="theme-color" />
@@ -32,53 +33,71 @@
 <body>
     <header>
         <div class="overlay"></div>
+        <nav>
+            <div class='nav-container'>
+                <a class='nav-logo'>
+                    <img alt='Logo' src='logo.png' />
+                </a>
+                <ul>
+                    <li>
+                        <a href='#' id="homeLink" onclick="showPage('home')">Home</a>
+                    </li>
+                    <li>
+                        <a href='#' id="rulesLink" onclick="showPage('rules')">Rules</a>
+                    </li>
+                    <li>
+                        <a href='#' id="discordLink" onclick="showPage('discord')">Discord</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <main>
-            <nav>
-                <div class='nav-container'>
-                    <a class='nav-logo'>
-                        <img alt='Logo' src='logo.png' />
-                    </a>
-                    <ul>
-                        <li>
-                            <a href='#'>Home</a>
-                        </li>
-                        <li>
-                            <a href='#'>Rules</a>
-                        </li>
-                        <li>
-                            <a href='#'>Discord</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <h1>Welcome to Pixel Haven</h1>
-            <div class="server-info">
-                <p style="margin: 0px;"><i class="ph-duotone ph-users"></i>&nbsp;&nbsp;<span data-playercounter-ip="pixelhaven.live">0</span>&nbsp;&nbsp;&nbsp;<i class="ph-duotone ph-desktop"></i>&nbsp;&nbsp;Java&nbsp;&nbsp;&nbsp;<i class="ph-duotone ph-hash-straight"></i>&nbsp;&nbsp;1.21.X</p>
-                <br>
-                <div class="card">
-                    <div class="wrap">
-                        <div class="terminal">
-                            <hgroup class="head">
-                                <p class="title"><i class="ph-duotone ph-hand-waving"></i> Join Now</p>
+            <div id="home" class="page">
+                <h1>Welcome to Pixel Haven</h1>
+                <div class="server-info">
+                    <p style="margin: 0px;"><i class="ph-duotone ph-users"></i>&nbsp;&nbsp;<span
+                            data-playercounter-ip="pixelhaven.live">0</span>&nbsp;&nbsp;&nbsp;<i
+                            class="ph-duotone ph-desktop"></i>&nbsp;&nbsp;Java&nbsp;&nbsp;&nbsp;<i
+                            class="ph-duotone ph-hash-straight"></i>&nbsp;&nbsp;1.21.X</p>
+                    <br>
+                    <div class="card">
+                        <div class="wrap">
+                            <div class="terminal">
+                                <hgroup class="head">
+                                    <p class="title"><i class="ph-duotone ph-hand-waving"></i> Join Now</p>
 
-                                <button class="copy_toggle" id="copyButton" tabindex="-1" type="button">
-                                    <svg width="16px" height="16px" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" fill="none">
-                                        <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2">
-                                        </path>
-                                        <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z">
-                                        </path>
-                                    </svg>
-                                </button>
-                            </hgroup>
+                                    <button class="copy_toggle" id="copyButton" tabindex="-1" type="button">
+                                        <svg width="16px" height="16px" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                            stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
+                                            stroke="currentColor" fill="none">
+                                            <path
+                                                d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2">
+                                            </path>
+                                            <path
+                                                d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                </hgroup>
 
-                            <div class="body">
-                                <pre class="pre">
+                                <div class="body">
+                                    <pre class="pre">
                                     <code class="ip" id="ipaddresscopy" data-ip="pixelhaven.live"></code>
                                 </pre>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div id="rules" class="page" style="display:none;">
+                <h1>Rules</h1>
+                <!-- Rules content -->
+            </div>
+            <div id="discord" class="page" style="display:none;">
+                <h1>Discord</h1>
+                <!-- Discord content -->
             </div>
         </main>
     </header>
